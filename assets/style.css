@@ -13,6 +13,8 @@
   --button-border-color: rgb(166, 166, 166);
   --button-border-color-hover: black;
   --nav-background-color: rgb(221, 221, 221);
+  --nav-tab-color-hover: rgb(202, 202, 202);
+  --nav-current-tab-color: red;
 }
 
 * {
@@ -128,21 +130,30 @@ footer {
   width: calc(100% / 3);
   height: 100%;
   text-align: center;
+  padding: 5px;
 }
 
 .nav-icon {
-  height: 30px;
+  height: 45px;
   /* filter: invert(98%) sepia(58%) saturate(5382%) hue-rotate(181deg); */
-}
-
-.nav-icon:hover {
-  filter: invert(51%) sepia(36%) saturate(6219%) hue-rotate(225deg);
 }
 
 .navigation a {
   display: block;
 }
 
-.navigation a:hover {
-  background-color: red;
+.navigation li:hover {
+  background-color: var(--nav-tab-color-hover);
+}
+
+.current-tab {
+  background-color: var(--nav-current-tab-color);
+}
+
+.current-tab:hover {
+  background-color: green;
+}
+
+.user-profile-thumb {
+  border-radius: 50%;
 }
