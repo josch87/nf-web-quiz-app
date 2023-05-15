@@ -120,6 +120,10 @@ footer {
   background-color: var(--nav-background-color);
 }
 
+.footer-placeholder {
+  height: 60px;
+}
+
 .navigation {
   display: flex;
   background-color: var(--nav-background-color);
