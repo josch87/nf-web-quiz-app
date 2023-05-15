@@ -73,6 +73,11 @@ header {
   right: 20px;
 }
 
+.flagged {
+  filter: invert(29%) sepia(27%) saturate(6090%) hue-rotate(346deg)
+    brightness(102%) contrast(85%);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
