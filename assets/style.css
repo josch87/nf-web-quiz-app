@@ -85,6 +85,10 @@ header {
     brightness(102%) contrast(85%);
 }
 
+.answer-section p {
+  margin: 20px 0;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
