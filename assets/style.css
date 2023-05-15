@@ -40,7 +40,7 @@ header {
   padding: 10px;
 }
 
-.question-article {
+.question-section {
   display: flex;
   flex-direction: column;
   align-items: center;
