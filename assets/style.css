@@ -118,3 +118,16 @@ footer {
   border-top: 3px solid var(--grid-color);
   background-color: var(--nav-background-color);
 }
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navigation a {
+}
+
+.nav-icon {
+  height: 100%;
+}
