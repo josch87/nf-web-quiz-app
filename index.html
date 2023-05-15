@@ -4,12 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
     <title>Quiz App</title>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
+    <main>
+      <section class="question-card">
+        <article class="question-section">
+          <img class="bookmark-flag" src="/assets/icons/bookmark-solid.svg" />
+          <h2 class="question">What property flips the axes in flexbox?</h2>
+          <button class="button-show-answer show">Show Answer</button>
+          <section class="answer-section"></section>
+        </article>
+        <ul class="tags">
+          <li class="tag-item">#html</li>
+          <li class="tag-item">#flexbox</li>
+          <li class="tag-item">#css</li>
+        </ul>
+      </section>
+      <section class="question-card">
+        <article class="question-section">
+          <img
+            class="bookmark-flag flagged"
+            src="/assets/icons/bookmark-solid.svg"
+          />
+          <h2 class="question">What property flips the axes in flexbox?</h2>
+          <button class="button-show-answer hide">Hide Answer</button>
+          <section class="answer-section">
+            <p>flex-direction</p>
+          </section>
+        </article>
+        <ul class="tags">
+          <li class="tag-item">#html</li>
+          <li class="tag-item">#flexbox</li>
+          <li class="tag-item">#css</li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
