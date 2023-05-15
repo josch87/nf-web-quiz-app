@@ -1,4 +1,8 @@
 :root {
+  --main-color: red;
+  --secondary-color: blue;
+  --tags-color: rgb(80, 80, 80);
+  --tags-background-color: rgb(227, 227, 227);
   --grid-color: rgb(169, 169, 169);
 }
 
@@ -43,4 +47,10 @@ header {
 
 .tag-item {
   border: 1px solid var(--grid-color);
+  border-radius: 4px;
+  margin-right: 4px;
+  padding: 2px 5px;
+  font-size: 0.8em;
+  color: var(--tags-color);
+  background-color: var(--tags-background-color);
 }
