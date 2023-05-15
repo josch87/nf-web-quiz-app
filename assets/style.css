@@ -63,7 +63,14 @@ header {
   color: var(--button-color-hover);
   background-color: var(--button-background-color-hover);
   border: 1px solid var(--button-border-color-hover);
+}
+
+.show {
   cursor: help;
+}
+
+.hide {
+  cursor: pointer;
 }
 
 .bookmark-flag {
