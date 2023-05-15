@@ -73,10 +73,6 @@ header {
   right: 20px;
 }
 
-.marked {
-  color: red;
-}
-
 .tags {
   display: flex;
   flex-wrap: wrap;
