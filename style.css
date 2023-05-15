@@ -1,0 +1,17 @@
+:root {
+  --grid-color: rgb(169, 169, 169);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid var(--grid-color);
+  height: 80px;
+}
