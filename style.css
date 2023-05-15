@@ -20,3 +20,27 @@ header {
   height: 80px;
   position: sticky;
 }
+
+.question-card {
+  position: relative;
+  border: 3px solid var(--grid-color);
+  margin: 25px;
+  padding: 10px;
+}
+
+.bookmark-flag {
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.tag-item {
+  border: 1px solid var(--grid-color);
+}
