@@ -13,8 +13,10 @@
   --button-border-color: rgb(166, 166, 166);
   --button-border-color-hover: black;
   --nav-background-color: rgb(221, 221, 221);
-  --nav-tab-color-hover: rgb(202, 202, 202);
-  --nav-current-tab-color: red;
+  --nav-active-tab-color: red;
+  --nav-active-tab-color-hover: rgba(255, 0, 0, 0.7);
+  --nav-inactive-tab-color: rgb(202, 202, 202);
+  --nav-inactive-tab-color-hover: rgb(202, 202, 202, 0.7);
 }
 
 * {
@@ -121,12 +123,10 @@ footer {
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: var(--nav-background-color);
 }
 
 .navigation {
   display: flex;
-  background-color: var(--nav-background-color);
 }
 
 .nav-icon {
@@ -147,16 +147,20 @@ footer {
   height: 60px;
 }
 
-.navigation li:hover {
-  background-color: var(--nav-tab-color-hover);
+.active-tab {
+  background-color: var(--nav-active-tab-color);
 }
 
-.current-tab {
-  background-color: var(--nav-current-tab-color);
+.active-tab:hover {
+  background-color: var(--nav-active-tab-color-hover);
 }
 
-.current-tab:hover {
-  background-color: green;
+.inactive-tab {
+  background-color: var(--nav-inactive-tab-color);
+}
+
+.inactive-tab:hover {
+  background-color: var(--nav-inactive-tab-color-hover);
 }
 
 .user-profile-thumb {
