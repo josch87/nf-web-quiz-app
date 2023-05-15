@@ -124,30 +124,27 @@ footer {
   background-color: var(--nav-background-color);
 }
 
-.footer-placeholder {
-  height: 60px;
-}
-
 .navigation {
   display: flex;
   background-color: var(--nav-background-color);
 }
 
+.nav-icon {
+  height: 35px;
+}
+
 .navigation li {
   list-style: none;
-  width: calc(100% / 3);
+  flex-grow: 1;
   height: 100%;
   text-align: center;
-  padding: 5px;
 }
 
-.nav-icon {
-  height: 45px;
-  /* filter: invert(98%) sepia(58%) saturate(5382%) hue-rotate(181deg); */
-}
-
-.navigation a {
-  display: block;
+.navigation li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
 }
 
 .navigation li:hover {
