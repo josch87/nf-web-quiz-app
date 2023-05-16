@@ -19,7 +19,9 @@
   --nav-inactive-tab-color-hover: rgb(202, 202, 202, 0.7);
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
