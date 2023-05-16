@@ -204,3 +204,26 @@ footer {
 .user-aboutme > p {
   line-height: 1.5;
 }
+
+.counter {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  min-width: 90px;
+  height: 40px;
+}
+
+.counter > img {
+  height: 100%;
+  margin-right: 15px;
+}
+
+.counters {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
