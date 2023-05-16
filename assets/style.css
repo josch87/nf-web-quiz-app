@@ -13,8 +13,10 @@
   --button-border-color: rgb(166, 166, 166);
   --button-border-color-hover: black;
   --nav-background-color: rgb(221, 221, 221);
-  --nav-tab-color-hover: rgb(202, 202, 202);
-  --nav-current-tab-color: red;
+  --nav-active-tab-color: red;
+  --nav-active-tab-color-hover: rgba(255, 0, 0, 0.7);
+  --nav-inactive-tab-color: rgb(202, 202, 202);
+  --nav-inactive-tab-color-hover: rgb(202, 202, 202, 0.7);
 }
 
 * {
@@ -121,45 +123,44 @@ footer {
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: var(--nav-background-color);
-}
-
-.footer-placeholder {
-  height: 60px;
 }
 
 .navigation {
   display: flex;
-  background-color: var(--nav-background-color);
+}
+
+.nav-icon {
+  height: 35px;
 }
 
 .navigation li {
   list-style: none;
-  width: calc(100% / 3);
+  flex-grow: 1;
   height: 100%;
   text-align: center;
-  padding: 5px;
 }
 
-.nav-icon {
-  height: 45px;
-  /* filter: invert(98%) sepia(58%) saturate(5382%) hue-rotate(181deg); */
+.navigation li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
 }
 
-.navigation a {
-  display: block;
+.active-tab {
+  background-color: var(--nav-active-tab-color);
 }
 
-.navigation li:hover {
-  background-color: var(--nav-tab-color-hover);
+.active-tab:hover {
+  background-color: var(--nav-active-tab-color-hover);
 }
 
-.current-tab {
-  background-color: var(--nav-current-tab-color);
+.inactive-tab {
+  background-color: var(--nav-inactive-tab-color);
 }
 
-.current-tab:hover {
-  background-color: green;
+.inactive-tab:hover {
+  background-color: var(--nav-inactive-tab-color-hover);
 }
 
 .user-profile-thumb {
