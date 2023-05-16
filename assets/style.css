@@ -163,6 +163,32 @@ footer {
   background-color: var(--nav-inactive-tab-color-hover);
 }
 
+.user-profile-img > img {
+  border-radius: 50%;
+  width: 100%;
+  /*max-width: 300px;*/
+}
+
+.user-profile-img {
+  flex-shrink: 2;
+  width: 100px;
+  margin-right: 20px;
+}
+
 .user-profile-thumb {
   border-radius: 50%;
+}
+
+.profile {
+  margin: 30px 25px;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  -border: 3px solid var(--grid-color);
+}
+
+.user-name {
+  text-align: center;
 }
