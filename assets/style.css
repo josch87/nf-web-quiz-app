@@ -192,3 +192,15 @@ footer {
 .user-name {
   text-align: center;
 }
+
+.user-aboutme {
+  margin-top: 25px;
+}
+
+.user-aboutme > h3 {
+  margin-bottom: 10px;
+}
+
+.user-aboutme > p {
+  line-height: 1.5;
+}
