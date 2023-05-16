@@ -196,7 +196,7 @@ footer {
 }
 
 .user-aboutme {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .user-aboutme > h3 {
@@ -224,7 +224,7 @@ footer {
 }
 
 .counters {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -291,4 +291,18 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.settings {
+  margin-top: 30px;
+}
+
+.settings > h3 {
+  margin-bottom: 10px;
+}
+
+.setting-pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
