@@ -1,4 +1,5 @@
 @import "/components/header/header.css";
+@import "/components/card/card.css";
 
 :root {
   --main-color: red;
@@ -36,89 +37,6 @@ main {
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: var(--app-background-color);
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  position: sticky;
-  top: 0;
-  background-color: var(--header-background-color);
-  z-index: 1;
-}
-
-.question-card {
-  position: relative;
-  border: 3px solid var(--grid-color);
-  margin: 25px;
-  padding: 10px;
-}
-
-.question-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-}
-
-.question {
-  text-align: center;
-}
-
-.button-show-answer {
-  margin: 30px;
-  padding: 10px 30px;
-  color: var(--button-color);
-  background-color: var(--button-background-color);
-  border: 1px solid var(--button-border-color);
-}
-
-.button-show-answer:hover {
-  color: var(--button-color-hover);
-  background-color: var(--button-background-color-hover);
-  border: 1px solid var(--button-border-color-hover);
-}
-
-.show {
-  cursor: help;
-}
-
-.hide {
-  cursor: pointer;
-}
-
-.bookmark-flag {
-  height: 50px;
-  position: absolute;
-  top: -20px;
-  right: 20px;
-}
-
-.flagged {
-  filter: invert(29%) sepia(27%) saturate(6090%) hue-rotate(346deg)
-    brightness(102%) contrast(85%);
-}
-
-.answer-section p {
-  margin: 20px 0;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-.tag-item {
-  border: 1px solid var(--grid-color);
-  border-radius: 4px;
-  margin-right: 4px;
-  padding: 2px 8px;
-  font-size: 0.8em;
-  color: var(--tags-color);
-  background-color: var(--tags-background-color);
 }
 
 footer {
