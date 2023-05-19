@@ -8,23 +8,31 @@
 
 :root {
   --main-color: red;
-  --secondary-color: rgb(232, 232, 232);
-  --app-background-color: rgb(255, 255, 255);
-  --header-background-color: rgb(172, 172, 223);
-  --tags-color: rgb(80, 80, 80);
-  --tags-background-color: rgb(227, 227, 227);
-  --grid-color: rgb(169, 169, 169);
+  --secondary-color: #e8e8e8;
+  --app-background-color: white;
+  --header-background-color: #acacdf;
+  --tags-color: #505050;
+  --tags-background-color: #e3e3e3;
+  --grid-color: #a9a9a9;
   --button-color: black;
   --button-color-hover: white;
   --button-background-color: transparent;
   --button-background-color-hover: black;
-  --button-border-color: rgb(166, 166, 166);
+  --button-border-color: #a6a6a6;
   --button-border-color-hover: black;
-  --nav-background-color: rgb(221, 221, 221);
-  --nav-active-tab-color: red;
-  --nav-active-tab-color-hover: rgba(255, 0, 0, 0.7);
-  --nav-inactive-tab-color: rgb(202, 202, 202);
-  --nav-inactive-tab-color-hover: rgb(202, 202, 202, 0.7);
+  --nav-background-color: #dddddd;
+  --nav-active-tab-color: #ff0000;
+  --nav-active-tab-color-hover: color-mix(
+    in srgb,
+    var(--nav-active-tab-color) 70%,
+    white
+  );
+  --nav-inactive-tab-color: #cacaca;
+  --nav-inactive-tab-color-hover: color-mix(
+    in srgb,
+    var(--nav-inactive-tab-color) 70%,
+    white
+  );
 }
 
 *,
