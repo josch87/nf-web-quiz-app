@@ -1,10 +1,10 @@
-@import "/components/header/header.css";
-@import "/components/card/card.css";
-@import "/components/button/button.css";
-@import "/components/navigation/navigation.css";
-@import "/components/counter/counter.css";
-@import "/components/user_profile/user_profile.css";
-@import "/components/toggle_switch/toggle_switch.css";
+@import "/assets/components/header/header.css";
+@import "/assets/components/card/card.css";
+@import "/assets/components/button/button.css";
+@import "/assets/components/navigation/navigation.css";
+@import "/assets/components/counter/counter.css";
+@import "/assets/components/user_profile/user_profile.css";
+@import "/assets/components/toggle_switch/toggle_switch.css";
 
 :root {
   --main-color: red;
