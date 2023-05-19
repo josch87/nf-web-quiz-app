@@ -18,11 +18,11 @@
 }
 
 .navigation__tab--inactive {
-  background-color: var(--nav-navigation__tab--inactive-color);
+  background-color: var(--nav-inactive-tab-color);
 }
 
 .navigation__tab--inactive:hover {
-  background-color: var(--nav-navigation__tab--inactive-color-hover);
+  background-color: var(--nav-inactive-tab-color-hover);
 }
 
 .navigation__link {
@@ -34,4 +34,8 @@
 
 .navigation__icon {
   height: 35px;
+}
+
+.navigation__icon--user-profile {
+  border-radius: 50%;
 }

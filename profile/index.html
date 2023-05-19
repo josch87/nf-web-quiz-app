@@ -11,16 +11,21 @@
     <header class="header">
       <h1>Quiz App</h1>
     </header>
-    <main class="profile">
-      <section class="user-header">
-        <article class="user-profile-img">
-          <img src="/assets/images/user-profile.jpg" />
+    <main class="user_profile">
+      <section class="user_profile__header">
+        <article class="user_profile__image-container">
+          <img
+            class="user_profile__image"
+            src="/assets/images/user-profile.jpg"
+          />
         </article>
-        <article class="user-name"><h2>Aljoscha Zöller</h2></article>
+        <article class="user_profile__user-name">
+          <h2>Aljoscha Zöller</h2>
+        </article>
       </section>
-      <section class="user-aboutme">
-        <h3>About me</h3>
-        <p>
+      <section class="user_profile__about-me-container">
+        <h3 class="user_profile__about-me-header">About me</h3>
+        <p class="user_profile__about-me-bio">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et
@@ -37,13 +42,18 @@
           <img class="counter__icon" src="/assets/icons/bookmark-solid.svg" />4
         </article>
       </section>
-      <section class="settings">
-        <h3>Settings</h3>
-        <article class="setting-pair">
+      <section class="user_profile__settings">
+        <h3 class="user_profile__settings-header">Settings</h3>
+        <article class="user_profile__setting-pair">
           <label for="toggle-dark">Dark Mode</label>
-          <label class="switch">
-            <input type="checkbox" id="toggle-dark" />
-            <span class="slider round"></span
+          <label class="toggle_switch">
+            <input
+              class="toggle_switch__hide-checkbox"
+              type="checkbox"
+              id="toggle-dark" />
+            <span
+              class="toggle_switch__slider toggle_switch__slider--round"
+            ></span
           ></label>
         </article>
       </section>
@@ -68,7 +78,7 @@
           <li class="navigation__tab navigation__tab--active">
             <a class="navigation__link" href="/profile/index.html"
               ><img
-                class="navigation__icon user-profile-thumb"
+                class="navigation__icon navigation__icon--user-profile"
                 src="/assets/images/user-profile.jpg"
             /></a>
           </li>

@@ -1,0 +1,50 @@
+.user_profile {
+  margin: 30px 25px;
+}
+
+.user_profile__header {
+  display: flex;
+  align-items: center;
+  -border: 3px solid var(--grid-color);
+}
+
+.user_profile__image-container {
+  flex-shrink: 2;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.user_profile__image {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.user_profile__user-name {
+  text-align: center;
+}
+
+.user_profile__about-me-container {
+  margin-top: 30px;
+}
+
+.user_profile__about-me-header {
+  margin-bottom: 10px;
+}
+
+.user_profile__about-me-bio {
+  line-height: 1.5;
+}
+
+.user_profile__settings {
+  margin-top: 30px;
+}
+
+.user_profile__settings-header {
+  margin-bottom: 10px;
+}
+
+.user_profile__setting-pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
