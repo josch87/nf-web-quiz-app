@@ -1,4 +1,4 @@
-.button-show-answer {
+.button {
   margin: 30px;
   padding: 10px 30px;
   color: var(--button-color);
@@ -6,16 +6,16 @@
   border: 1px solid var(--button-border-color);
 }
 
-.button-show-answer:hover {
+.button:hover {
   color: var(--button-color-hover);
   background-color: var(--button-background-color-hover);
   border: 1px solid var(--button-border-color-hover);
 }
 
-.show {
+.button--show-answer {
   cursor: help;
 }
 
-.hide {
+.button--hide-answer {
   cursor: pointer;
 }
