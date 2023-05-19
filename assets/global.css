@@ -1,5 +1,6 @@
 @import "/components/header/header.css";
 @import "/components/card/card.css";
+@import "/components/button/button.css";
 
 :root {
   --main-color: red;

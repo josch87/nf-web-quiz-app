@@ -12,35 +12,39 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="question-card">
-        <article class="question-section">
-          <img class="bookmark-flag" src="/assets/icons/bookmark-solid.svg" />
-          <h2 class="question">What property flips the axes in flexbox?</h2>
+      <section class="card">
+        <article class="card__content">
+          <img class="card__bookmark" src="/assets/icons/bookmark-solid.svg" />
+          <h2 class="card__question">
+            What property flips the axes in flexbox?
+          </h2>
           <button class="button-show-answer show">Show Answer</button>
-          <section class="answer-section"></section>
+          <section class="card__answer"></section>
         </article>
-        <ul class="tags">
-          <li class="tag-item">#html</li>
-          <li class="tag-item">#flexbox</li>
-          <li class="tag-item">#css</li>
+        <ul class="card__tags">
+          <li class="card__tag-item">#html</li>
+          <li class="card__tag-item">#flexbox</li>
+          <li class="card__tag-item">#css</li>
         </ul>
       </section>
-      <section class="question-card">
-        <article class="question-section">
+      <section class="card">
+        <article class="card__content">
           <img
-            class="bookmark-flag flagged"
+            class="card__bookmark card__bookmark--flagged"
             src="/assets/icons/bookmark-solid.svg"
           />
-          <h2 class="question">What property flips the axes in flexbox?</h2>
+          <h2 class="card__question">
+            What property flips the axes in flexbox?
+          </h2>
           <button class="button-show-answer hide">Hide Answer</button>
-          <section class="answer-section">
+          <section class="card__answer">
             <p>flex-direction</p>
           </section>
         </article>
-        <ul class="tags">
-          <li class="tag-item">#html</li>
-          <li class="tag-item">#flexbox</li>
-          <li class="tag-item">#css</li>
+        <ul class="card__tags">
+          <li class="card__tag-item">#html</li>
+          <li class="card__tag-item">#flexbox</li>
+          <li class="card__tag-item">#css</li>
         </ul>
       </section>
     </main>
