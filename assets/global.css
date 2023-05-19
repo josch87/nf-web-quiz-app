@@ -1,6 +1,7 @@
 @import "/components/header/header.css";
 @import "/components/card/card.css";
 @import "/components/button/button.css";
+@import "/components/navigation/navigation.css";
 
 :root {
   --main-color: red;
@@ -46,44 +47,6 @@ footer {
   left: 0;
   width: 100%;
   height: 60px;
-}
-
-.navigation {
-  display: flex;
-}
-
-.nav-icon {
-  height: 35px;
-}
-
-.navigation li {
-  list-style: none;
-  flex-grow: 1;
-  height: 100%;
-  text-align: center;
-}
-
-.navigation li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-}
-
-.active-tab {
-  background-color: var(--nav-active-tab-color);
-}
-
-.active-tab:hover {
-  background-color: var(--nav-active-tab-color-hover);
-}
-
-.inactive-tab {
-  background-color: var(--nav-inactive-tab-color);
-}
-
-.inactive-tab:hover {
-  background-color: var(--nav-inactive-tab-color-hover);
 }
 
 .user-profile-img > img {
