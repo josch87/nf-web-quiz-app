@@ -38,15 +38,15 @@
   transition: 0.4s;
 }
 
-toggle_switch__hide-checkbox:checked + .toggle_switch__slider {
+.toggle_switch__hide-checkbox:checked + .toggle_switch__slider {
   background-color: var(--main-color);
 }
 
-toggle_switch__hide-checkbox:focus + .toggle_switch__slider {
-  box-shadow: 0 0 1px var(--main-color);
+.toggle_switch__hide-checkbox:focus + .toggle_switch__slider {
+  box-shadow: 0 0 2px var(--main-color);
 }
 
-toggle_switch__hide-checkbox:checked + .toggle_switch__slider:before {
+.toggle_switch__hide-checkbox:checked + .toggle_switch__slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
