@@ -1,0 +1,22 @@
+.counter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.counter__item {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  min-width: 90px;
+  height: 40px;
+}
+
+.counter__icon {
+  height: 100%;
+  margin-right: 15px;
+}
