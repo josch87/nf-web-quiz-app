@@ -1,0 +1,61 @@
+@import "/assets/components/header/header.css";
+@import "/assets/components/card/card.css";
+@import "/assets/components/button/button.css";
+@import "/assets/components/navigation/navigation.css";
+@import "/assets/components/counter/counter.css";
+@import "/assets/components/user_profile/user_profile.css";
+@import "/assets/components/toggle_switch/toggle_switch.css";
+
+:root {
+  --main-color: red;
+  --secondary-color: #e8e8e8;
+  --app-background-color: white;
+  --header-background-color: #acacdf;
+  --tags-color: #505050;
+  --tags-background-color: #e3e3e3;
+  --grid-color: #a9a9a9;
+  --button-color: black;
+  --button-color-hover: white;
+  --button-background-color: transparent;
+  --button-background-color-hover: black;
+  --button-border-color: #a6a6a6;
+  --button-border-color-hover: black;
+  --nav-background-color: #dddddd;
+  --nav-active-tab-color: #ff0000;
+  --nav-active-tab-color-hover: color-mix(
+    in srgb,
+    var(--nav-active-tab-color) 70%,
+    white
+  );
+  --nav-inactive-tab-color: #cacaca;
+  --nav-inactive-tab-color-hover: color-mix(
+    in srgb,
+    var(--nav-inactive-tab-color) 70%,
+    white
+  );
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: var(--app-background-color);
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}

@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+  border: 3px solid var(--grid-color);
+  margin: 25px;
+  padding: 10px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.card__question {
+  text-align: center;
+}
+
+.card__bookmark {
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+.card__bookmark--flagged {
+  filter: invert(29%) sepia(27%) saturate(6090%) hue-rotate(346deg)
+    brightness(102%) contrast(85%);
+}
+
+.card__answer p {
+  margin: 20px 0;
+}
+
+.card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.card__tag-item {
+  border: 1px solid var(--grid-color);
+  border-radius: 4px;
+  margin-right: 4px;
+  padding: 2px 8px;
+  font-size: 0.8em;
+  color: var(--tags-color);
+  background-color: var(--tags-background-color);
+}

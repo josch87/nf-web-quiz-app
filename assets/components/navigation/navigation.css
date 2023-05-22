@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__tab {
+  list-style: none;
+  flex-grow: 1;
+  height: 100%;
+  text-align: center;
+}
+
+.navigation__tab--active {
+  background-color: var(--nav-active-tab-color);
+}
+
+.navigation__tab--active:hover {
+  background-color: var(--nav-active-tab-color-hover);
+}
+
+.navigation__tab--inactive {
+  background-color: var(--nav-inactive-tab-color);
+}
+
+.navigation__tab--inactive:hover {
+  background-color: var(--nav-inactive-tab-color-hover);
+}
+
+.navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.navigation__icon {
+  height: 35px;
+}
+
+.navigation__icon--user-profile {
+  border-radius: 50%;
+}

@@ -4,43 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/global.css" />
     <title>Quiz App</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Quiz App</h1>
     </header>
-    <main class="profile">
-      <section class="user-header">
-        <article class="user-profile-img">
-          <img src="/assets/images/user-profile.jpg" />
+    <main class="user_profile">
+      <section class="user_profile__header">
+        <article class="user_profile__image-container">
+          <img
+            class="user_profile__image"
+            src="/assets/images/user-profile.jpg"
+          />
         </article>
-        <article class="user-name"><h2>Aljoscha Zöller</h2></article>
+        <article class="user_profile__user-name">
+          <h2>Aljoscha Zöller</h2>
+        </article>
       </section>
-      <section class="user-aboutme">
-        <h3>About me</h3>
-        <p>
+      <section class="user_profile__about-me-container">
+        <h3 class="user_profile__about-me-header">About me</h3>
+        <p class="user_profile__about-me-bio">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et
         </p>
       </section>
-      <section class="counters">
-        <article class="counter">
-          <img src="/assets/icons/circle-question-solid.svg" />12
+      <section class="counter">
+        <article class="counter__item">
+          <img
+            class="counter__icon"
+            src="/assets/icons/circle-question-solid.svg"
+          />12
         </article>
-        <article class="counter">
-          <img src="/assets/icons/bookmark-solid.svg" />4
+        <article class="counter__item">
+          <img class="counter__icon" src="/assets/icons/bookmark-solid.svg" />4
         </article>
       </section>
-      <section class="settings">
-        <h3>Settings</h3>
-        <article class="setting-pair">
+      <section class="user_profile__settings">
+        <h3 class="user_profile__settings-header">Settings</h3>
+        <article class="user_profile__setting-pair">
           <label for="toggle-dark">Dark Mode</label>
-          <label class="switch">
-            <input type="checkbox" id="toggle-dark" />
-            <span class="slider round"></span
+          <label class="toggle_switch">
+            <input
+              class="toggle_switch__hide-checkbox"
+              type="checkbox"
+              id="toggle-dark" />
+            <span
+              class="toggle_switch__slider toggle_switch__slider--round"
+            ></span
           ></label>
         </article>
       </section>
@@ -48,20 +61,24 @@
     <footer>
       <nav>
         <ul class="navigation">
-          <li class="inactive-tab">
-            <a href="/index.html"
-              ><img class="nav-icon" src="/assets/icons/house-solid.svg"
-            /></a>
-          </li>
-          <li class="inactive-tab">
-            <a href="/bookmarks/index.html"
-              ><img class="nav-icon" src="/assets/icons/bookmark-solid.svg"
-            /></a>
-          </li>
-          <li class="active-tab">
-            <a href="/profile/index.html"
+          <li class="navigation__tab navigation__tab--inactive">
+            <a class="navigation__link" href="/index.html"
               ><img
-                class="nav-icon user-profile-thumb"
+                class="navigation__icon"
+                src="/assets/icons/house-solid.svg"
+            /></a>
+          </li>
+          <li class="navigation__tab navigation__tab--inactive">
+            <a class="navigation__link" href="/bookmarks/index.html"
+              ><img
+                class="navigation__icon"
+                src="/assets/icons/bookmark-solid.svg"
+            /></a>
+          </li>
+          <li class="navigation__tab navigation__tab--active">
+            <a class="navigation__link" href="/profile/index.html"
+              ><img
+                class="navigation__icon navigation__icon--user-profile"
                 src="/assets/images/user-profile.jpg"
             /></a>
           </li>
