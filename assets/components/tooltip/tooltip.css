@@ -3,6 +3,7 @@
   z-index: 2;
   cursor: pointer;
   --tooltip-width: 120px;
+  --tooltip-space-bottom: 120%;
 }
 
 /* Hide the tooltip content by default */
@@ -18,7 +19,7 @@
 /* Position tooltip above the element */
 .tooltip:before {
   position: absolute;
-  bottom: 120%;
+  bottom: var(--tooltip-space-bottom);
   left: 50%;
   margin-bottom: 5px;
   margin-left: calc(var(--tooltip-width) / -2);
@@ -38,7 +39,7 @@
 /* Triangle hack to make tooltip look like a speech bubble */
 .tooltip:after {
   position: absolute;
-  bottom: 120%;
+  bottom: var(--tooltip-space-bottom);
   left: 50%;
   margin-left: -5px;
   width: 0;

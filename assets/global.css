@@ -34,8 +34,8 @@
     var(--nav-inactive-tab-color) 70%,
     white
   );
-  --tooltip-text-color: white;
-  --tooltip-background-color: green;
+  --tooltip-text-color: #ffffff;
+  --tooltip-background-color: #7e7e7e;
   --tooltip-arrow-color: var(--tooltip-background-color);
 }
 
