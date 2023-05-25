@@ -45,16 +45,24 @@
       <section class="user_profile__settings">
         <h3 class="user_profile__settings-header">Settings</h3>
         <article class="user_profile__setting-pair">
-          <label for="toggle-dark">Dark Mode</label>
-          <label class="toggle_switch">
-            <input
-              class="toggle_switch__hide-checkbox"
-              type="checkbox"
-              id="toggle-dark" />
-            <span
-              class="toggle_switch__slider toggle_switch__slider--round"
-            ></span
-          ></label>
+          <form data-js="settings">
+            <label for="toggle-dark">Dark Mode</label>
+            <label class="toggle_switch">
+              <input
+                class="toggle_switch__hide-checkbox"
+                type="checkbox"
+                id="toggle-dark" />
+              <span
+                class="toggle_switch__slider toggle_switch__slider--round"
+              ></span
+            ></label>
+            <label for="color-mode">Color Mode</label>
+            <select id="color-mode" name="colorMode">
+              <option value="default">Browser Default</option>
+              <option value="light-mode">Light Mode</option>
+              <option value="dark-mode">Dark Mode</option>
+            </select>
+          </form>
         </article>
       </section>
     </main>
