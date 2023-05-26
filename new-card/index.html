@@ -25,7 +25,11 @@
           rows="5"
           required
           maxlength="150"
+          data-js="questionInput"
         ></textarea>
+        <span class="new_card__input-counter" data-js="inputCounterQuestion"
+          >0 characters left</span
+        >
         <label class="new_card__label" for="answer">Your answer:</label>
         <textarea
           class="new_card__input new_card__input--textarea"
@@ -33,7 +37,11 @@
           rows="5"
           required
           maxlength="150"
+          data-js="answerInput"
         ></textarea>
+        <span class="new_card__input-counter" data-js="inputCounterAnswer"
+          >0 characters left</span
+        >
         <label class="new_card__label" for="tag">Tag:</label>
         <input class="new_card__input" type="text" id="tag" required />
         <button class="button new_card__submit-button" type="submit">

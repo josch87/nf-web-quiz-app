@@ -1,6 +1,14 @@
 const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"');
 const answerButton = document.querySelector('[data-js="answerButton"');
 const answerSection = document.querySelector('[data-js="answerSection"');
+const inputCounterQuestion = document.querySelector(
+  '[data-js="inputCounterQuestion"'
+);
+const inputCounterAnswer = document.querySelector(
+  '[data-js="inputCounterAnswer"'
+);
+const questionInput = document.querySelector('[data-js="questionInput"');
+const answerInput = document.querySelector('[data-js="answerInput"');
 
 bookmarkIcon.addEventListener("click", () => {
   bookmarkIcon.classList.toggle("card__bookmark--flagged");
@@ -9,27 +17,28 @@ bookmarkIcon.addEventListener("click", () => {
 answerButton.textContent = "Show Answer";
 
 answerButton.addEventListener("click", () => {
-  //answerButton.classList.toggle("button--show-answer");
-
-  console.log("hidden: " + answerButton.getAttribute("hidden"));
-
   if (answerButton.textContent === "Show Answer") {
     answerButton.textContent = "Hide Answer";
   } else if (answerButton.textContent === "Hide Answer") {
     answerButton.textContent = "Show Answer";
   }
 
-  if (answerButton.classList === "button--show-answer") {
-    answerButton.classList.add("button--hide-answer");
-  } else if (answerButton.classList === "button---hide-answer") {
+  if (answerButton.classList.contains("button--show-answer")) {
     answerButton.classList.remove("button--show-answer");
+    answerButton.classList.add("button--hide-answer");
+  } else if (answerButton.classList.contains("button--hide-answer")) {
+    answerButton.classList.remove("button--hide-answer");
+    answerButton.classList.add("button--show-answer");
   }
-
-  console.log(answerButton.className);
-
-  //   answerButton.classList === "button--show-answer"
-  //     ? (answerButton.textContent = "Show Answer")
-  //     : (answerButton.textContent = "Hide Answer");
 
   answerSection.toggleAttribute("hidden");
 });
+
+function countRemainingInputLength(currentLength, maxLength) {
+  const remainingLength = maxLength - currentLength;
+
+  if (remainingLength === 1) {
+    return "1 character left";
+  }
+  return remainingLength + "characters left";
+}

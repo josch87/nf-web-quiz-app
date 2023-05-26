@@ -17,11 +17,21 @@
 }
 
 .new_card__input:focus-visible {
-   outline-color: var(--main-color);
+  outline-color: var(--main-color);
 }
 
 .new_card__input--textarea {
   resize: none;
 }
 
-.new_card__submit-button
+.new_card__input-counter {
+  text-align: end;
+  font-size: 0.75em;
+  font-weight: 100;
+  position: relative;
+  bottom: 22px;
+  right: 5px;
+}
+
+.new_card__submit-button {
+}
