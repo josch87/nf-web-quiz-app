@@ -1,11 +1,12 @@
 const inputCounterQuestion = document.querySelector(
-  '[data-js="inputCounterQuestion"'
+  '[data-js="inputCounterQuestion"]'
 );
 const inputCounterAnswer = document.querySelector(
-  '[data-js="inputCounterAnswer"'
+  '[data-js="inputCounterAnswer"]'
 );
-const questionInput = document.querySelector('[data-js="questionInput"');
-const answerInput = document.querySelector('[data-js="answerInput"');
+const questionInput = document.querySelector('[data-js="questionInput"]');
+const answerInput = document.querySelector('[data-js="answerInput"]');
+const questionForm = document.querySelector('[data-js="questionForm"]');
 
 function countRemainingInputLength(currentLength, maxLength) {
   const remainingLength = maxLength - currentLength;
@@ -44,4 +45,13 @@ answerInput.addEventListener("input", () => {
     answerInputLength,
     answerInputMaxLength
   );
+});
+
+questionForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  console.log(data);
 });

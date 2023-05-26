@@ -1,6 +1,6 @@
-const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"');
-const answerButton = document.querySelector('[data-js="answerButton"');
-const answerSection = document.querySelector('[data-js="answerSection"');
+const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]');
+const answerButton = document.querySelector('[data-js="answerButton"]');
+const answerSection = document.querySelector('[data-js="answerSection"]');
 
 bookmarkIcon.addEventListener("click", () => {
   bookmarkIcon.classList.toggle("card__bookmark--flagged");

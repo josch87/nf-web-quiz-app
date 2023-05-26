@@ -23,6 +23,7 @@
         <textarea
           class="new_card__input new_card__input--textarea"
           id="question"
+          name="question"
           rows="5"
           required
           maxlength="0"
@@ -35,6 +36,7 @@
         <textarea
           class="new_card__input new_card__input--textarea"
           id="answer"
+          name="answer"
           rows="5"
           required
           maxlength="0"
@@ -44,10 +46,14 @@
           >0 characters left</span
         >
         <label class="new_card__label" for="tag">Tag:</label>
-        <input class="new_card__input" type="text" id="tag" required />
-        <button class="button new_card__submit-button" type="submit">
-          Submit
-        </button>
+        <input
+          class="new_card__input"
+          type="text"
+          id="tag"
+          name="tag"
+          required
+        />
+        <button class="button" type="submit">Submit</button>
       </form>
     </main>
     <footer>
