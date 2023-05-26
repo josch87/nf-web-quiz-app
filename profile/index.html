@@ -43,8 +43,10 @@
         </article>
       </section>
       <section class="user_profile__settings">
-        <h3 class="user_profile__settings-header">Settings</h3>
-        <form data-js="settings">
+        <h3 class="user_profile__settings-header" id="setting-header">
+          Settings
+        </h3>
+        <form aria-labelledby="settings-header" data-js="settings">
           <article class="user_profile__setting-pair">
             <label for="toggle-dark">Dark Mode</label>
             <label class="toggle_switch">
