@@ -13,5 +13,35 @@ function countRemainingInputLength(currentLength, maxLength) {
   if (remainingLength === 1) {
     return "1 character left";
   }
-  return remainingLength + "characters left";
+  return remainingLength + " characters left";
 }
+
+const questionInputMaxLength = 150;
+const answerInputMaxLength = 150;
+inputCounterQuestion.textContent = countRemainingInputLength(
+  0,
+  questionInputMaxLength
+);
+inputCounterAnswer.textContent = countRemainingInputLength(
+  0,
+  answerInputMaxLength
+);
+
+questionInput.setAttribute("maxlength", questionInputMaxLength);
+answerInput.setAttribute("maxlength", answerInputMaxLength);
+
+questionInput.addEventListener("input", () => {
+  const questionInputLength = Number.parseInt(questionInput.value.length);
+  inputCounterQuestion.textContent = countRemainingInputLength(
+    questionInputLength,
+    questionInputMaxLength
+  );
+});
+
+answerInput.addEventListener("input", () => {
+  const answerInputLength = Number.parseInt(answerInput.value.length);
+  inputCounterAnswer.textContent = countRemainingInputLength(
+    answerInputLength,
+    answerInputMaxLength
+  );
+});
