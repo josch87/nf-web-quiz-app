@@ -6,16 +6,26 @@ bookmarkIcon.addEventListener("click", () => {
   bookmarkIcon.classList.toggle("card__bookmark--flagged");
 });
 
+answerButton.textContent = "Show Answer";
+
 answerButton.addEventListener("click", () => {
-  answerButton.classList.toggle("button--show-answer");
+  //answerButton.classList.toggle("button--show-answer");
 
-  console.log(answerButton.getAttribute("hidden"));
+  console.log("hidden: " + answerButton.getAttribute("hidden"));
 
-  //   if (answerButton.textContent === "Show Answer") {
-  //     answerButton.textContent = "Hide Answer";
-  //   } else {
-  //     answerButton.textContent = "Show Answer";
-  //   }
+  if (answerButton.textContent === "Show Answer") {
+    answerButton.textContent = "Hide Answer";
+  } else if (answerButton.textContent === "Hide Answer") {
+    answerButton.textContent = "Show Answer";
+  }
+
+  if (answerButton.classList === "button--show-answer") {
+    answerButton.classList.add("button--hide-answer");
+  } else if (answerButton.classList === "button---hide-answer") {
+    answerButton.classList.remove("button--show-answer");
+  }
+
+  console.log(answerButton.className);
 
   //   answerButton.classList === "button--show-answer"
   //     ? (answerButton.textContent = "Show Answer")
