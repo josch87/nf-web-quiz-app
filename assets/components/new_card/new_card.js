@@ -47,14 +47,7 @@ answerInput.addEventListener("input", () => {
   );
 });
 
-questionForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
-
-  console.log(data);
-
+function createNewCard(cardData) {
   const newCard = document.createElement("section");
   newCard.classList.add("card");
   questionForm.append(newCard);
@@ -70,7 +63,7 @@ questionForm.addEventListener("submit", (event) => {
 
   const newQuestion = document.createElement("h2");
   newQuestion.classList.add("card__question");
-  newQuestion.textContent = data.question;
+  newQuestion.textContent = cardData.question;
 
   const newButton = document.createElement("button");
   newButton.classList.add("button", "button--hide-answer");
@@ -83,7 +76,7 @@ questionForm.addEventListener("submit", (event) => {
   newAnswerSection.setAttribute("data-js", "answerSection");
 
   const newAnswerParagraph = document.createElement("p");
-  newAnswerParagraph.textContent = data.answer;
+  newAnswerParagraph.textContent = cardData.answer;
   newAnswerSection.append(newAnswerParagraph);
 
   newArticle.append(newBookmarkIcon, newQuestion, newButton, newAnswerSection);
@@ -94,8 +87,20 @@ questionForm.addEventListener("submit", (event) => {
 
   const newCardTagItem = document.createElement("li");
   newCardTagItem.classList.add("card__tag-item");
-  newCardTagItem.textContent = "#" + data.tag;
+  newCardTagItem.textContent = "#" + cardData.tag;
   newCardTags.append(newCardTagItem);
+}
+
+questionForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  createNewCard(data);
+
+  event.target.reset();
+  questionInput.focus();
 });
 
 /*
