@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/assets/global.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main class="new_card">
+      <form
+        class="new_card__form"
+        data-js="questionForm"
+        aria-label="Create a new question card"
+      >
+        <label class="new_card__label" for="question">Your question:</label>
+        <textarea
+          class="new_card__input new_card__input--textarea"
+          id="question"
+          rows="5"
+          required
+          maxlength="150"
+        ></textarea>
+        <label class="new_card__label" for="answer">Your answer:</label>
+        <textarea
+          class="new_card__input new_card__input--textarea"
+          id="answer"
+          rows="5"
+          required
+          maxlength="150"
+        ></textarea>
+        <label class="new_card__label" for="tag">Tag:</label>
+        <input class="new_card__input" type="text" id="tag" required />
+        <button class="button new_card__submit-button" type="submit">
+          Submit
+        </button>
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <ul class="navigation">
+          <li class="navigation__tab navigation__tab--inactive">
+            <a class="navigation__link" href="/index.html"
+              ><img
+                class="navigation__icon"
+                src="/assets/icons/house-solid.svg"
+            /></a>
+          </li>
+          <li class="navigation__tab navigation__tab--inactive">
+            <a class="navigation__link" href="/bookmarks/index.html"
+              ><img
+                class="navigation__icon"
+                src="/assets/icons/bookmark-solid.svg"
+            /></a>
+          </li>
+          <li class="navigation__tab navigation__tab--active">
+            <a class="navigation__link" href="/new-card/index.html"
+              ><img
+                class="navigation__icon"
+                src="/assets/icons/circle-plus-solid.svg"
+            /></a>
+          </li>
+          <li class="navigation__tab navigation__tab--inactive">
+            <a class="navigation__link" href="/profile/index.html"
+              ><img
+                class="navigation__icon navigation__icon--user-profile"
+                src="/assets/images/user-profile.jpg"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

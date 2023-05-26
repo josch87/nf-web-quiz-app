@@ -1,0 +1,27 @@
+.new_card {
+  margin: 30px 25px;
+}
+
+.new_card__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new_card__label {
+  margin-bottom: 5px;
+}
+
+.new_card__input {
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.new_card__input:focus-visible {
+   outline-color: var(--main-color);
+}
+
+.new_card__input--textarea {
+  resize: none;
+}
+
+.new_card__submit-button
