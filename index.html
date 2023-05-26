@@ -23,10 +23,16 @@
           <h2 class="card__question">
             What property flips the axes in flexbox?
           </h2>
-          <button class="button button--show-answer" type="button">
+          <button
+            class="button button--show-answer"
+            type="button"
+            data-js="answerButton"
+          >
             Show Answer
           </button>
-          <section class="card__answer"></section>
+          <section class="card__answer" data-js="answerSection" hidden>
+            <p>flex-direction</p>
+          </section>
         </article>
         <ul class="card__tags">
           <li class="card__tag-item">#html</li>
@@ -44,10 +50,14 @@
           <h2 class="card__question">
             What property flips the axes in flexbox?
           </h2>
-          <button class="button button--hide-answer" type="button">
+          <button
+            class="button button--hide-answer"
+            type="button"
+            data-js="answerButton"
+          >
             Hide Answer
           </button>
-          <section class="card__answer">
+          <section class="card__answer" data-js="answerSection">
             <p>flex-direction</p>
           </section>
         </article>
