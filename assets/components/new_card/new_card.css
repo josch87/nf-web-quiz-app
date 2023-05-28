@@ -1,0 +1,30 @@
+.new_card__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new_card__label {
+  margin-bottom: 5px;
+}
+
+.new_card__input {
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.new_card__input:focus-visible {
+  outline-color: var(--main-color);
+}
+
+.new_card__input--textarea {
+  resize: none;
+}
+
+.new_card__input-counter {
+  text-align: end;
+  font-size: 0.75em;
+  font-weight: 100;
+  position: relative;
+  bottom: 22px;
+  right: 5px;
+}

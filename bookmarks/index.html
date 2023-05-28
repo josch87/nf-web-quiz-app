@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/global.js" defer></script>
+    <script src="/assets/components/card/card.js" defer></script>
     <link rel="stylesheet" href="/assets/global.css" />
     <title>Quiz App</title>
   </head>
@@ -17,14 +19,23 @@
           <img
             class="card__bookmark card__bookmark--flagged"
             src="/assets/icons/bookmark-solid.svg"
+            data-js="bookmarkIcon"
           />
           <h2 class="card__question">
             What property flips the axes in flexbox?
           </h2>
-          <button class="button button--show-answer" type="button">
+          <button
+            class="button button--show-answer"
+            type="button"
+            data-js="answerButton"
+          >
             Show Answer
           </button>
-          <section class="card__answer"></section>
+          <section
+            class="card__answer"
+            data-js="answerSection"
+            hidden
+          ></section>
         </article>
         <ul class="card__tags">
           <li class="card__tag-item">#html</li>
@@ -37,14 +48,19 @@
           <img
             class="card__bookmark card__bookmark--flagged"
             src="/assets/icons/bookmark-solid.svg"
+            data-js="bookmarkIcon"
           />
           <h2 class="card__question">
             What property flips the axes in flexbox?
           </h2>
-          <button class="button button--hide-answer" type="button">
+          <button
+            class="button button--hide-answer"
+            type="button"
+            data-js="answerButton"
+          >
             Hide Answer
           </button>
-          <section class="card__answer">
+          <section class="card__answer" data-js="answerSection">
             <p>flex-direction</p>
           </section>
         </article>
@@ -60,9 +76,9 @@
         <ul class="navigation">
           <li
             class="navigation__tab navigation__tab--inactive tooltip"
-            data-tooltip="Home page"
+            data-tooltip="Home"
           >
-            <a class="navigation__link" href="/"
+            <a class="navigation__link" href="/" aria-label="Home page"
               ><img
                 class="navigation__icon"
                 src="/assets/icons/house-solid.svg"
@@ -70,9 +86,12 @@
           </li>
           <li
             class="navigation__tab navigation__tab--active tooltip"
-            data-tooltip="Bookmarks page"
+            data-tooltip="Bookmarks"
           >
-            <a class="navigation__link" href="/bookmarks/"
+            <a
+              class="navigation__link"
+              href="/bookmarks/"
+              aria-label="Bookmarks page"
               ><img
                 class="navigation__icon"
                 src="/assets/icons/bookmark-solid.svg"
@@ -80,9 +99,25 @@
           </li>
           <li
             class="navigation__tab navigation__tab--inactive tooltip"
-            data-tooltip="Profile page"
+            data-tooltip="New card"
           >
-            <a class="navigation__link" href="/profile/"
+            <a
+              class="navigation__link"
+              href="/new-card/"
+              aria-label="New card page"
+              ><img
+                class="navigation__icon"
+                src="/assets/icons/circle-plus-solid.svg"
+            /></a>
+          </li>
+          <li
+            class="navigation__tab navigation__tab--inactive tooltip"
+            data-tooltip="Profile & Settings"
+          >
+            <a
+              class="navigation__link"
+              href="/profile/"
+              aria-label="Profile and settings page"
               ><img
                 class="navigation__icon navigation__icon--user-profile"
                 src="/assets/images/user-profile.jpg"

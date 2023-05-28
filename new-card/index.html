@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/global.js" defer></script>
-    <script src="/assets/components/card/card.js" defer></script>
+    <script src="/assets/components/new_card/new_card.js" defer></script>
     <link rel="stylesheet" href="/assets/global.css" />
     <title>Quiz App</title>
   </head>
@@ -14,66 +14,53 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="card">
-        <article class="card__content">
-          <img
-            class="card__bookmark"
-            src="/assets/icons/bookmark-solid.svg"
-            data-js="bookmarkIcon"
-          />
-          <h2 class="card__question">
-            What property flips the axes in flexbox?
-          </h2>
-          <button
-            class="button button--show-answer"
-            type="button"
-            data-js="answerButton"
-          >
-            Show Answer
-          </button>
-          <section class="card__answer" data-js="answerSection" hidden>
-            <p>flex-direction</p>
-          </section>
-        </article>
-        <ul class="card__tags">
-          <li class="card__tag-item">#html</li>
-          <li class="card__tag-item">#flexbox</li>
-          <li class="card__tag-item">#css</li>
-        </ul>
-      </section>
-      <section class="card">
-        <article class="card__content">
-          <img
-            class="card__bookmark card__bookmark--flagged"
-            src="/assets/icons/bookmark-solid.svg"
-            data-js="bookmarkIcon"
-          />
-          <h2 class="card__question">
-            What property flips the axes in flexbox?
-          </h2>
-          <button
-            class="button button--hide-answer"
-            type="button"
-            data-js="answerButton"
-          >
-            Hide Answer
-          </button>
-          <section class="card__answer" data-js="answerSection">
-            <p>flex-direction</p>
-          </section>
-        </article>
-        <ul class="card__tags">
-          <li class="card__tag-item">#html</li>
-          <li class="card__tag-item">#flexbox</li>
-          <li class="card__tag-item">#css</li>
-        </ul>
-      </section>
+      <form
+        class="new_card__form"
+        data-js="questionForm"
+        aria-label="Create a new question card"
+      >
+        <label class="new_card__label" for="question">Your question:</label>
+        <textarea
+          class="new_card__input new_card__input--textarea"
+          id="question"
+          name="question"
+          rows="5"
+          required
+          maxlength="0"
+          data-js="questionInput"
+        ></textarea>
+        <span class="new_card__input-counter" data-js="inputCounterQuestion"
+          >0 characters left</span
+        >
+        <label class="new_card__label" for="answer">Your answer:</label>
+        <textarea
+          class="new_card__input new_card__input--textarea"
+          id="answer"
+          name="answer"
+          rows="5"
+          required
+          maxlength="0"
+          data-js="answerInput"
+        ></textarea>
+        <span class="new_card__input-counter" data-js="inputCounterAnswer"
+          >0 characters left</span
+        >
+        <label class="new_card__label" for="tag">Tag:</label>
+        <input
+          class="new_card__input"
+          type="text"
+          id="tag"
+          name="tag"
+          required
+        />
+        <button class="button" type="submit">Create new card</button>
+      </form>
     </main>
     <footer>
       <nav>
         <ul class="navigation">
           <li
-            class="navigation__tab navigation__tab--active tooltip"
+            class="navigation__tab navigation__tab--inactive tooltip"
             data-tooltip="Home"
           >
             <a class="navigation__link" href="/" aria-label="Home page"
@@ -96,7 +83,7 @@
             /></a>
           </li>
           <li
-            class="navigation__tab navigation__tab--inactive tooltip"
+            class="navigation__tab navigation__tab--active tooltip"
             data-tooltip="New card"
           >
             <a
