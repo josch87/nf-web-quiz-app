@@ -24,6 +24,7 @@
   background-color: var(--secondary-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .toggle_switch__slider:before {
