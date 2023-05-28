@@ -13,6 +13,10 @@
   background-color: var(--nav-active-tab-color);
 }
 
+.navigation__tab--active > .navigation__link:focus-visible {
+  outline-color: blue;
+}
+
 .navigation__tab--active:hover {
   background-color: var(--nav-active-tab-color-hover);
 }

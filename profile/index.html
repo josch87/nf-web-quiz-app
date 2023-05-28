@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#acacdf" />
+    <script src="/global.js" defer></script>
     <link rel="stylesheet" href="/assets/global.css" />
     <title>Quiz App</title>
   </head>
@@ -12,7 +13,7 @@
     <header class="header">
       <h1>Quiz App</h1>
     </header>
-    <main class="user_profile">
+    <main>
       <section class="user_profile__header">
         <article class="user_profile__image-container">
           <img
@@ -44,40 +45,80 @@
         </article>
       </section>
       <section class="user_profile__settings">
-        <h3 class="user_profile__settings-header">Settings</h3>
-        <article class="user_profile__setting-pair">
-          <label for="toggle-dark">Dark Mode</label>
-          <label class="toggle_switch">
-            <input
-              class="toggle_switch__hide-checkbox"
-              type="checkbox"
-              id="toggle-dark" />
-            <span
-              class="toggle_switch__slider toggle_switch__slider--round"
-            ></span
-          ></label>
-        </article>
+        <h3 class="user_profile__settings-header" id="setting-header">
+          Settings
+        </h3>
+        <form aria-labelledby="settings-header" data-js="settings">
+          <article class="user_profile__setting-pair">
+            <label for="toggle-dark">Dark Mode</label>
+            <label class="toggle_switch">
+              <input
+                class="toggle_switch__hide-checkbox"
+                type="checkbox"
+                id="toggle-dark" />
+              <span
+                class="toggle_switch__slider toggle_switch__slider--round"
+              ></span
+            ></label>
+          </article>
+          <article class="user_profile__setting-pair">
+            <label for="theme">Theme</label>
+            <select id="theme" name="theme">
+              <option value="default">OS Default</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </article>
+        </form>
       </section>
     </main>
     <footer>
       <nav>
         <ul class="navigation">
-          <li class="navigation__tab navigation__tab--inactive">
-            <a class="navigation__link" href="/index.html"
+          <li
+            class="navigation__tab navigation__tab--inactive tooltip"
+            data-tooltip="Home"
+          >
+            <a class="navigation__link" href="/" aria-label="Home page"
               ><img
                 class="navigation__icon"
                 src="/assets/icons/house-solid.svg"
             /></a>
           </li>
-          <li class="navigation__tab navigation__tab--inactive">
-            <a class="navigation__link" href="/bookmarks/index.html"
+          <li
+            class="navigation__tab navigation__tab--inactive tooltip"
+            data-tooltip="Bookmarks"
+          >
+            <a
+              class="navigation__link"
+              href="/bookmarks/"
+              aria-label="Bookmarks page"
               ><img
                 class="navigation__icon"
                 src="/assets/icons/bookmark-solid.svg"
             /></a>
           </li>
-          <li class="navigation__tab navigation__tab--active">
-            <a class="navigation__link" href="/profile/index.html"
+          <li
+            class="navigation__tab navigation__tab--inactive tooltip"
+            data-tooltip="New card"
+          >
+            <a
+              class="navigation__link"
+              href="/new-card/"
+              aria-label="New card page"
+              ><img
+                class="navigation__icon"
+                src="/assets/icons/circle-plus-solid.svg"
+            /></a>
+          </li>
+          <li
+            class="navigation__tab navigation__tab--active tooltip"
+            data-tooltip="Profile & Settings"
+          >
+            <a
+              class="navigation__link"
+              href="/profile/"
+              aria-label="Profile and settings page"
               ><img
                 class="navigation__icon navigation__icon--user-profile"
                 src="/assets/images/user-profile.jpg"
