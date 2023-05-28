@@ -17,14 +17,17 @@ function countRemainingInputLength(currentLength, maxLength) {
   return remainingLength + " characters left";
 }
 
+let questionInputLength = Number.parseInt(questionInput.value.length);
 const questionInputMaxLength = 150;
-const answerInputMaxLength = 150;
 inputCounterQuestion.textContent = countRemainingInputLength(
-  0,
+  questionInputLength,
   questionInputMaxLength
 );
+
+let answerInputLength = Number.parseInt(answerInput.value.length);
+const answerInputMaxLength = 150;
 inputCounterAnswer.textContent = countRemainingInputLength(
-  0,
+  answerInputLength,
   answerInputMaxLength
 );
 
@@ -32,7 +35,7 @@ questionInput.setAttribute("maxlength", questionInputMaxLength);
 answerInput.setAttribute("maxlength", answerInputMaxLength);
 
 questionInput.addEventListener("input", () => {
-  const questionInputLength = Number.parseInt(questionInput.value.length);
+  questionInputLength = Number.parseInt(questionInput.value.length);
   inputCounterQuestion.textContent = countRemainingInputLength(
     questionInputLength,
     questionInputMaxLength
@@ -40,7 +43,7 @@ questionInput.addEventListener("input", () => {
 });
 
 answerInput.addEventListener("input", () => {
-  const answerInputLength = Number.parseInt(answerInput.value.length);
+  answerInputLength = Number.parseInt(answerInput.value.length);
   inputCounterAnswer.textContent = countRemainingInputLength(
     answerInputLength,
     answerInputMaxLength
