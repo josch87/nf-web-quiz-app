@@ -44,7 +44,8 @@
 }
 
 .toggle_switch__hide-checkbox:focus + .toggle_switch__slider {
-  box-shadow: 0 0 2px var(--main-color);
+  /* box-shadow: 0 0 2px var(--main-color); */
+  outline: 2px solid var(--main-color);
 }
 
 .toggle_switch__hide-checkbox:checked + .toggle_switch__slider:before {
