@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#acacdf" />
     <script src="/global.js" defer></script>
+    <script
+      src="/assets/components/user_profile/user_profile.js"
+      defer
+    ></script>
     <link rel="stylesheet" href="/assets/global.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/os-default-theme.css"
+      data-js="colorThemeStylesheet"
+    />
     <title>Quiz App</title>
   </head>
   <body>
@@ -63,8 +72,8 @@
           </article>
           <article class="user_profile__setting-pair">
             <label for="theme">Theme</label>
-            <select id="theme" name="theme">
-              <option value="default">OS Default</option>
+            <select id="theme" name="theme" data-js="selectTheme">
+              <option value="os-default">OS Default</option>
               <option value="light">Light</option>
               <option value="dark">Dark</option>
             </select>
