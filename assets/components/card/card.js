@@ -6,8 +6,6 @@ bookmarkIcon.addEventListener("click", () => {
   bookmarkIcon.classList.toggle("card__bookmark--flagged");
 });
 
-answerButton.textContent = "Show Answer";
-
 answerButton.addEventListener("click", () => {
   if (answerButton.textContent === "Show Answer") {
     answerButton.textContent = "Hide Answer";
