@@ -6,6 +6,7 @@
 @import "/assets/components/user_profile/user_profile.css";
 @import "/assets/components/toggle_switch/toggle_switch.css";
 @import "/assets/components/new_card/new_card.css";
+@import "/assets/components/tooltip/tooltip.css";
 
 :root {
   --main-color: red;
@@ -35,6 +36,9 @@
     var(--nav-inactive-tab-color) 70%,
     white
   );
+  --tooltip-text-color: #ffffff;
+  --tooltip-background-color: #7e7e7e;
+  --tooltip-arrow-color: var(--tooltip-background-color);
 }
 
 *,
