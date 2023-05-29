@@ -6,14 +6,20 @@
   "background_color": "#acacdf",
   "icons": [
     {
-      "src": "/assets/icons/favicon_v1_512.png",
+      "src": "/assets/icons/pwa-icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/assets/icons/favicon_v1_1024.png",
+      "src": "/assets/icons/pwa-icon-1024.png",
       "type": "image/png",
       "sizes": "1024x1024"
+    },
+    {
+      "src": "/assets/icons/pwa-icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ]
 }
