@@ -11,6 +11,7 @@ const header = document.querySelector('[data-js="header"]');
 function showInAppInstallPromotion() {
   const installPromotion = document.createElement("div");
   installPromotion.classList.add("install_promotion");
+  installPromotion.setAttribute("data-js", "installPromotion");
   installPromotion.innerHTML = `
   <p class="install_promotion__text">
     Get a new experience and install the Quiz App on your device!
@@ -20,13 +21,33 @@ function showInAppInstallPromotion() {
   header.after(installPromotion);
 }
 
+function hideInAppInstallPromotion() {
+  const installPromotion = document.querySelector(
+    '[data-js="installPromotion"]'
+  );
+
+  installPromotion.remove();
+}
+
 function listenToInstallButton() {
   const installPwaButton = document.querySelector(
     '[data-js="installPwaButton"]'
   );
-  installPwaButton.addEventListener("click", () => {
+
+  installPwaButton.addEventListener("click", async () => {
     deferredPrompt.prompt();
-    console.log("test");
+
+    const { outcome } = await deferredPrompt.userChoice;
+
+    deferredPrompt = null;
+
+    if (outcome === "accepted") {
+      console.log("User accepted the install prompt.");
+      hideInAppInstallPromotion();
+    } else if (outcome === "dismissed") {
+      console.log("User dismissed the install prompt");
+    }
+    hideInAppInstallPromotion();
   });
 }
 
