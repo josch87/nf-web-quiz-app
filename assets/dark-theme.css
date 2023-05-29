@@ -1,9 +1,14 @@
 :root {
-  --main-color: #ff0000;
+  --background-color: #f3f3f3;
+  --primary-content-color: #dadada;
+  --accent-color: #acacdf;
+  --text-color: #333333;
+
+  --main-color: green;
   --secondary-color: #e8e8e8;
-  --app-background-color: #1b1b1b;
-  --app-font-color: #ffffff;
-  --header-background-color: #acacdf;
+  --app-background-color: var(--background-color);
+  --app-font-color: var(--text-color);
+  --header-background-color: var(--accent-color);
   --header-text-color: #ffffff;
   --tags-color: #505050;
   --tags-background-color: #e3e3e3;
@@ -15,7 +20,7 @@
   --button-border-color: #a6a6a6;
   --button-border-color-hover: black;
   --nav-background-color: #dddddd;
-  --nav-active-tab-color: #ff0000;
+  --nav-active-tab-color: var(--accent-color);
   --nav-active-tab-color-hover: color-mix(
     in srgb,
     var(--nav-active-tab-color) 70%,

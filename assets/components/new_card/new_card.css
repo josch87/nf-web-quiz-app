@@ -13,7 +13,7 @@
 }
 
 .new_card__input:focus-visible {
-  outline-color: var(--main-color);
+  outline-color: var(--accent-color);
 }
 
 .new_card__input--textarea {
