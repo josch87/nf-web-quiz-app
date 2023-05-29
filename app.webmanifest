@@ -1,25 +1,43 @@
 {
   "name": "Quiz App",
+  "description": "Test your knowledge with the one-of-a-kind quiz app!",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#acacdf",
   "background_color": "#acacdf",
   "icons": [
     {
-      "src": "/assets/icons/pwa-icon-512.png",
+      "src": "/assets/pwa/pwa-icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/assets/icons/pwa-icon-1024.png",
+      "src": "/assets/pwa/pwa-icon-1024.png",
       "type": "image/png",
       "sizes": "1024x1024"
     },
     {
-      "src": "/assets/icons/pwa-icon-512-maskable.png",
+      "src": "/assets/pwa/pwa-icon-512-maskable.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/pwa/screenshot-macOS.png",
+      "type": "image/png",
+      "sizes": "835x1066"
+    },
+    {
+      "src": "/assets/pwa/screenshot-windows11.png",
+      "type": "image/png",
+      "sizes": "780x1098"
+    },
+    {
+      "src": "/assets/pwa/screenshot-android.png",
+      "type": "image/png",
+      "sizes": "1080x2340"
     }
   ]
 }
