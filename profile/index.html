@@ -34,6 +34,33 @@
           <h2>Aljoscha Zöller</h2>
         </article>
       </section>
+      <button
+        class="user_profile__edit-button"
+        type="button"
+        data-js="showUserProfileModalButton"
+        title="Edit user profile"
+      >
+        <img
+          class="user_profile__edit-icon"
+          src="/assets/icons/user-pen-solid.svg"
+        />
+      </button>
+      <dialog class="user_profile__edit-modal" data-js="editUserProfileModal">
+        <form data-js="userProfileForm">
+          <h2>Edit user profile</h2>
+          <label for="profile-img">Profile image:</label>
+          <input
+            id="profile-img"
+            type="file"
+            accept="image/jpg, image/jpeg"
+            name="profile-img"
+          />
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" />
+          <label for="about-me">About me:</label>
+          <textarea id="about-me"></textarea>
+        </form>
+      </dialog>
       <section class="user_profile__about-me-container">
         <h3 class="user_profile__about-me-header">About me</h3>
         <p class="user_profile__about-me-bio">

@@ -25,3 +25,16 @@ selectTheme.addEventListener("input", () => {
     changeColorThemeStylesheet("/assets/dark-theme.css");
   }
 });
+
+const showUserProfileModalButton = document.querySelector(
+  '[data-js="showUserProfileModalButton"]'
+);
+const editUserProfileModal = document.querySelector(
+  '[data-js="editUserProfileModal"]'
+);
+
+showUserProfileModalButton.addEventListener("click", () => {
+  editUserProfileModal.showModal();
+});
+
+const userProfileForm = document.querySelector('[data-js="userProfileForm"]');

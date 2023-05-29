@@ -19,6 +19,31 @@
   text-align: center;
 }
 
+.user_profile__edit-button {
+  border: none;
+  background: none;
+  position: relative;
+  bottom: 25px;
+  cursor: pointer;
+  padding: 8px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+.user_profile__edit-icon {
+  height: 15px;
+  position: relative;
+  top: 1px;
+  left: 2px;
+}
+
+.user_profile__edit-modal {
+  height: 80%;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
 .user_profile__about-me-container {
   margin-top: 30px;
 }
