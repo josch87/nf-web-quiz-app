@@ -1,3 +1,7 @@
 {
-  "name": "Quiz App"
+  "name": "Quiz App",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#acacdf",
+  "background_color": "#acacdf"
 }
