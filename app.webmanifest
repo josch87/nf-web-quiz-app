@@ -35,8 +35,8 @@
       "sizes": "780x1098"
     },
     {
-      "src": "/assets/pwa/screenshot-android.png",
-      "type": "image/png",
+      "src": "/assets/pwa/screenshot-android.jpg",
+      "type": "image/jpg",
       "sizes": "1080x2340"
     }
   ]
