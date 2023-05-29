@@ -1,8 +1,9 @@
 :root {
-  --main-color: red;
+  --main-color: #ff0000;
   --secondary-color: #e8e8e8;
-  --app-background-color: white;
-  --header-background-color: black;
+  --app-background-color: #1b1b1b;
+  --app-font-color: #ffffff;
+  --header-background-color: #acacdf;
   --header-text-color: #ffffff;
   --tags-color: #505050;
   --tags-background-color: #e3e3e3;
