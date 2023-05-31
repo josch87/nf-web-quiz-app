@@ -1,0 +1,13 @@
+.install_promotion {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+  border-bottom: 1px solid black;
+  background-color: #f1f0f0;
+}
+
+.install_promotion__text {
+  flex-basis: 70%;
+  text-align: center;
+  align-self: center;
+}

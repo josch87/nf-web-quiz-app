@@ -1,5 +1,4 @@
 .button {
-  margin: 30px;
   padding: 10px 30px;
   color: var(--button-color);
   background-color: var(--button-background-color);
@@ -14,8 +13,10 @@
 
 .button--show-answer {
   cursor: help;
+  margin: 30px;
 }
 
 .button--hide-answer {
   cursor: pointer;
+  margin: 30px;
 }
